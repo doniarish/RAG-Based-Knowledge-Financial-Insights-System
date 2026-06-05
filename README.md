@@ -50,6 +50,19 @@ set OPENAI_API_KEY=your_key_here
 
 If no API key is configured, the app still works using extractive grounded responses from retrieved chunks.
 
+4. (Optional) use Ollama instead of OpenAI:
+
+```bash
+ollama pull llama3.1:8b
+ollama serve
+```
+
+Then in the app sidebar:
+
+- Turn **Use Ollama LLM** ON to use Ollama generation.
+- Turn it OFF to use extractive (non-LLM) grounded answers.
+- Keep base URL as `http://localhost:11434/v1` unless your Ollama host differs.
+
 ## Run
 
 ```bash

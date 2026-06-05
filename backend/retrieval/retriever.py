@@ -2,8 +2,8 @@ from __future__ import annotations
 
 from typing import Dict, List, Sequence
 
-from retrieval.embedder import Embedder
-from retrieval.faiss_store import FAISSStore
+from backend.retrieval.embedder import Embedder
+from backend.retrieval.faiss_store import FAISSStore
 
 
 class Retriever:

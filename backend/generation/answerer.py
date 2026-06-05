@@ -4,9 +4,9 @@ from dataclasses import dataclass
 import re
 from typing import Dict, List, Sequence
 
-from generation.llm_client import LLMClient
-from generation.prompt_builder import build_grounded_prompt
-from retrieval.retriever import Retriever
+from backend.generation.llm_client import LLMClient
+from backend.generation.prompt_builder import build_grounded_prompt
+from backend.retrieval.retriever import Retriever
 
 
 REFUSAL_TEXT = "Not enough information in the uploaded documents/data."
